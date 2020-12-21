@@ -63,6 +63,7 @@ for tar_file in target_files:
         # target_file_name = "target.jpg"
 
         ### 1.  load images
+
         src = np.array(cv2.imread(os.path.join(sample_path, src_file_name), 1) / 255.0, dtype=np.float32)
         target  = np.array(cv2.imread(os.path.join(target_path, tar_file), 1) / 255.0, dtype=np.float32)
         # target = cv2.resize(target, (int(target.shape[1] / scale), int(target.shape[0] / scale)))
